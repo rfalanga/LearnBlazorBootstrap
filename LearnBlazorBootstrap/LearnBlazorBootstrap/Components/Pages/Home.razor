@@ -1,7 +1,15 @@
 ﻿@page "/"
+@using BlazorBootstrap
+@using LearnBlazorBootstrap.Models
 
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
 
-Welcome to your new app.
+<Grid TItem="Person" Data="People">
+    <Row>
+        <Column>
+            <p>Welcome to your new app.</p>
+        </Column>
+    </Row>
+</Grid>

@@ -8,6 +8,7 @@ public partial class Home
 
     protected override void OnInitialized()
     {
+        // Sample data for demonstration purposes
         People =
         [
             new Person { Id = 1, FirstName = "John", LastName = "Doe", Age = 30 },
@@ -36,5 +37,7 @@ public partial class Home
             new Person { Id = 24, FirstName = "Victoria", LastName = "Lee", Age = 29 },
             new Person { Id = 25, FirstName = "William", LastName = "Walker", Age = 35 }
         ];
+
+
     }
 }
