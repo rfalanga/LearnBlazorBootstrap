@@ -4,7 +4,7 @@ namespace LearnBlazorBootstrap.Components.Pages;
 
 public partial class Home
 {
-    private List<Person> People { get; set; } = [];
+    public List<Person> People { get; set; } = new List<Person>();
 
     protected override void OnInitialized()
     {
