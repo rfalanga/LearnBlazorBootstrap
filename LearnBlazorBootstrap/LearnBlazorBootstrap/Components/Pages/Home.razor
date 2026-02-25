@@ -6,7 +6,7 @@
 
 <h1>Hello, world!</h1>
 
-<Grid TItem="People"
+<Grid TItem="Person"
       AllowFiltering="true"
       AllowPaging="true"
       AllowSorting="true"
@@ -18,9 +18,9 @@
       SelectionMode="GridSelectionMode.Multiple">
 
     <GridColumns>
-        <GridColumn TItem="People" Field="@nameof(People.Id)" Title="Id" Sortable="true" Filterable="true" />
-        <GridColumn TItem="People" Field="@nameof(People.Name)" Title="Name" Sortable="true" Filterable="true" />
-        <GridColumn TItem="People" Field="@nameof(People.Age)" Title="Age" Sortable="true" Filterable="true" />
-        <GridColumn TItem="People" Field="@nameof(People.Email)" Title="Email" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" Field="@nameof(Person.Id)" Title="Id" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" Field="@nameof(Person.FirstName)" Title="First Name" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" Field="@nameof(Person.LastName)" Title="Last Name" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" Field="@nameof(Person.Age)" Title="Age" Sortable="true" Filterable="true" />
     </GridColumns>
 </Grid>
