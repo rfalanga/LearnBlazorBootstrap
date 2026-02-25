@@ -4,16 +4,15 @@ namespace LearnBlazorBootstrap.Components.Pages;
 
 public partial class Home
 {
-    public List<Person> People { get; set; } = new List<Person>();
+    public IEnumerable<Person> People { get; set; } = default!;
 
     protected override void OnInitialized()
     {
         // Sample data for demonstration purposes
         People = GetPeople();
-
     }
 
-    private List<Person> GetPeople()
+    private static List<Person> GetPeople()
     {
         return
         [
