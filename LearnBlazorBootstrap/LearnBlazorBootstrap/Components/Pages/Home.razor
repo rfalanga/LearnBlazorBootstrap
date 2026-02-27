@@ -18,9 +18,11 @@
       SelectionMode="GridSelectionMode.Multiple">
 
     <GridColumns>
-        <GridColumn TItem="Person" Field="@nameof(Person.Id)" Title="Id" Sortable="true" Filterable="true" />
-        <GridColumn TItem="Person" Field="@nameof(Person.FirstName)" Title="First Name" Sortable="true" Filterable="true" />
-        <GridColumn TItem="Person" Field="@nameof(Person.LastName)" Title="Last Name" Sortable="true" Filterable="true" />
-        <GridColumn TItem="Person" Field="@nameof(Person.Age)" Title="Age" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" PropertyName="Id" HeaderText="Id" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" PropertyName="FirstName" HeaderText="First Name" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" PropertyName="LastName" HeaderText="Last Name" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" PropertyName="Age" HeaderText="Age" Sortable="true" Filterable="true" />
     </GridColumns>
 </Grid>
+
+<h3>After the BlazorBootstrap Grid</h3>
