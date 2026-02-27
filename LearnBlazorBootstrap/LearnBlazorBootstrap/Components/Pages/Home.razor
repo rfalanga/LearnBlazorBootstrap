@@ -18,7 +18,11 @@
       SelectionMode="GridSelectionMode.Multiple">
 
     <GridColumns>
-        <GridColumn TItem="Person" PropertyName="Id" HeaderText="Id" Sortable="true" Filterable="true" />
+        <GridColumn TItem="Person" PropertyName="Id" HeaderText="Id" Sortable="true" Filterable="true">
+                <Template Context="person">
+                    <strong>@person.Id</strong>
+            </Template>
+        </GridColumn>
         <GridColumn TItem="Person" PropertyName="FirstName" HeaderText="First Name" Sortable="true" Filterable="true" />
         <GridColumn TItem="Person" PropertyName="LastName" HeaderText="Last Name" Sortable="true" Filterable="true" />
         <GridColumn TItem="Person" PropertyName="Age" HeaderText="Age" Sortable="true" Filterable="true" />
